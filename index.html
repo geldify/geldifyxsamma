@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konten FYP (For Your Profit) - The Starter Kit</title>
+
+    <!-- Social Media Sharing Meta Tags (Open Graph & Twitter) -->
+    <meta property="og:title" content="Konten FYP (For Your Profit): The Starter Kit">
+    <meta property="og:description" content="From First Content to First Paycheck. Seminar offline oleh Geldify x Samma di Senyawa Space.">
+    <meta property="og:image" content="https://geldify-bmd.netlify.app/poster-webinar.png"> 
+    <meta property="og:url" content="https://geldify-bmd.netlify.app/"> 
+    <meta property="og:type" content="website">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Konten FYP (For Your Profit): The Starter Kit">
+    <meta name="twitter:description" content="From First Content to First Paycheck. Seminar offline oleh Geldify x Samma di Senyawa Space.">
+    <meta name="twitter:image" content="https://geldify-bmd.netlify.app/poster-webinar.png">
+
+    <!-- Retro Fonts Loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- INLINED & MINIFIED CSS FOR RETRO THEME -->
+    <style>
+        /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindreshus/modern-normalize */*,::before,::after{box-sizing:border-box}:root{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-text-size-adjust:100%;text-size-adjust:100%}body{margin:0}hr{height:0;color:inherit}abbr[title]{text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp,pre{font-family:ui-monospace,SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.5;margin:0;padding:0;color:inherit}button,select{text-transform:none}button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button}::-moz-focus-inner{border-style:none;padding:0}:-moz-focusring{outline:1px dotted ButtonText}:-moz-ui-invalid{box-shadow:none}legend{padding:0}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}
+        
+        :root {
+            --retro-bg: #fdf8f0;
+            --retro-dark: #4a2c2a;
+            --retro-red: #ef4444;
+            --retro-orange: #f97316;
+            --retro-amber: #f59e0b;
+        }
+
+        body{font-family:'Poppins',sans-serif;background-color:var(--retro-bg);color:var(--retro-dark);}
+        .card{background-color:#fff;border-radius:.5rem;border:2px solid var(--retro-dark);box-shadow:4px 4px 0 var(--retro-dark);}
+        .interactive-card{transition:transform .2s ease,box-shadow .2s ease}
+        .interactive-card:hover{transform:translate(-2px, -2px);box-shadow:6px 6px 0 var(--retro-dark)}
+        
+        .btn-primary{background-color:var(--retro-red);color:#fff;font-family:'Bungee', cursive;font-weight:400;letter-spacing:1px;border-radius:.5rem;padding:.75rem 1.5rem;transition: all .15s ease-out;border:2px solid var(--retro-dark);box-shadow:3px 3px 0 var(--retro-dark);text-align:center;}
+        .btn-primary:hover{background-color:var(--retro-amber);transform:translate(2px, 2px);box-shadow:none;}
+
+        .badge{display:inline-block;padding:.25rem .75rem;border-radius:.5rem;font-weight:600;font-size:.75rem;border:2px solid var(--retro-dark);background-color:var(--retro-amber);color:var(--retro-dark)}
+        .faq-item{border-top:2px solid var(--retro-dark)}.faq-item:first-child{border-top:none}summary{list-style:none}summary::-webkit-details-marker{display:none}details[open]>summary .chevron{transform:rotate(180deg)}
+        .fade-in-section{opacity:0;transform:translateY(20px);transition:opacity .6s ease-out,transform .6s ease-out}
+        .fade-in-section.is-visible{opacity:1;transform:translateY(0)}
+        .container{margin-left:auto;margin-right:auto;max-width:48rem;padding-left:1rem;padding-right:1rem;padding-top:2rem;padding-bottom:2rem; position: relative; z-index: 1;}@media (min-width:768px){.container{padding-top:3rem;padding-bottom:3rem}}
+        header{text-align:center;margin-bottom:3rem}
+        h1, h2, h3, h4 { font-family: 'Bungee', cursive; text-transform:uppercase; letter-spacing: 1px; line-height: 1.2;}
+        h1{font-size:1.875rem;font-weight:400;color:var(--retro-dark);max-width:42rem;margin-left:auto;margin-right:auto}@media (min-width:768px){h1{font-size:2.25rem}}
+        h1 span{display:block;margin-top:.5rem}
+        section{margin-bottom:3rem}
+        .grid{display:grid;gap:2rem}@media (min-width:768px){.grid{gap:3rem}}
+        @media (min-width:768px){.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}.items-center{align-items:center}
+        .order-1{order:1}.order-2{order:2}@media (min-width:768px){.md\:order-1{order:1}.md\:order-2{order:2}}
+        .text-center{text-align:center}@media (min-width:768px){.md\:text-left{text-align:left}}
+        .inline-block{display:inline-block}.bg-blue-100{background-color:#fee2e2}.text-blue-800{color:#991b1b}
+        .text-sm{font-size:.875rem}.font-semibold{font-weight:600}.py-1{padding-top:.25rem;padding-bottom:.25rem}.px-3{padding-left:.75rem;padding-right:.75rem}.rounded-full{border-radius:9999px}.mb-4{margin-bottom:1rem}
+        h2{font-size:1.5rem;font-weight:400;margin-bottom:.75rem}@media (min-width:768px){h2{font-size:1.875rem}}
+        .text-lg{font-size:1.125rem;color:#78350f;}.w-full{width:100%}.aspect-\[4\/5\]{aspect-ratio:4/5}
+        .bg-slate-200{background-color:#fed7aa}.rounded-xl{border-radius:.75rem}.flex{display:flex}.justify-center{justify-content:center}
+        .border{border-width:2px}.border-slate-300{border-color:var(--retro-dark)}.text-slate-500{color:var(--retro-dark)}.font-medium{font-weight:500}
+        .p-4{padding:1rem}.p-6{padding:1.5rem}@media (min-width:768px){.md\:p-8{padding:2rem}}
+        .flex-col{flex-direction:column}@media (min-width:768px){.md\:flex-row{flex-direction:row}}.gap-6{gap:1.5rem}.flex-1{flex:1 1 0%}
+        .text-2xl{font-size:1.5rem;font-weight:400}.text-4xl{font-size:2.25rem;font-weight:400}.text-blue-600{color:var(--retro-red)}.my-2{margin-top:.5rem;margin-bottom:.5rem}
+        .line-through{text-decoration:line-through; opacity: 0.6;}.mt-2{margin-top:.5rem}.bg-yellow-100{background-color:#fef9c3}.text-yellow-800{color:#854d0e}
+        .p-2{padding:.5rem}.rounded-md{border-radius:.375rem}.hidden{display:none}@media (min-width:768px){.md\:block{display:block}}.w-px{width:1px}.h-24{height:6rem}
+        .mb-2{margin-bottom:.5rem}.h-4{height:1rem}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.duration-1000{transition-duration:1s}.ease-out{transition-timing-function:cubic-bezier(0,0,.2,1)}
+        .block{display:block}.mb-8{margin-bottom:2rem}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}@media (min-width:768px){.md\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}}.gap-4{gap:1rem}
+        .flex-col{flex-direction:column}.justify-between{justify-content:space-between}.w-24{width:6rem}.h-24{height:6rem}.mx-auto{margin-left:auto;margin-right:auto}
+        .text-xl{font-size:1.25rem}.mb-3{margin-bottom:.75rem}.mt-4{margin-top:1rem}
+        .bg-slate-100{background-color:#fed7aa}.text-slate-800{color:var(--retro-dark)}.mt-1{margin-top:.25rem}.text-left{text-align:left}
+        .space-y-2>:not([hidden])~:not([hidden]){margin-top:.5rem}.items-start{align-items:flex-start}.mr-2{margin-right:.5rem}
+        .mt-auto{margin-top:auto}.pt-4{padding-top:1rem}
+        .py-2{padding-top:.5rem;padding-bottom:.5rem}.cursor-pointer{cursor:pointer}.w-5{width:1.25rem}.h-5{height:1.25rem}
+        .transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.duration-300{transition-duration:.3s}
+        .pt-2{padding-top:.5rem}.pb-2{padding-bottom:.pb-2}.max-w-xl{max-width:36rem}.mb-6{margin-bottom:1.5rem}.inline-block{display:inline-block}
+        footer{text-align:center;margin-top:3rem;padding-top:1.5rem;padding-bottom:1.5rem;border-top:2px solid var(--retro-dark)}
+        .value-stack ul { list-style: none; padding: 0; }
+        .value-stack li { display: flex; justify-content: space-between; align-items: center; padding: 0.5rem 0; border-bottom: 2px dotted #ccc; }
+        .value-stack li:last-child { border-bottom: none; }
+        .value-stack .total { border-top: 2px solid var(--retro-dark); font-weight: 700; margin-top: 0.5rem; padding-top: 0.5rem;}
+        .value-stack .final-price-wrapper { text-align: right; margin-top: 1rem; }
+        .timeline{position:relative;margin:0 auto;padding:2rem 0}.timeline::after{content:'';position:absolute;width:4px;background-color:var(--retro-dark);top:0;bottom:0;left:50%;margin-left:-2px}.timeline-item{padding:1rem 2.5rem;position:relative;background-color:inherit;width:50%}.timeline-item::after{content:'';position:absolute;width:20px;height:20px;right:-10px;background-color:var(--retro-bg);border:4px solid var(--retro-dark);top:25px;border-radius:50%;z-index:1}.timeline-left{left:0}.timeline-right{left:50%}.timeline-left::before{content:'';height:0;position:absolute;top:32px;width:0;z-index:1;right:2.25rem;border:medium solid var(--retro-dark);border-width:10px 0 10px 10px;border-color:transparent transparent transparent var(--retro-dark)}.timeline-right::before{content:'';height:0;position:absolute;top:32px;width:0;z-index:1;left:2.25rem;border:medium solid var(--retro-dark);border-width:10px 10px 10px 0;border-color:transparent var(--retro-dark) transparent transparent}.timeline-right::after{left:-10px}@media (max-width:767px){.timeline::after{left:20px}.timeline-item{width:100%;padding-left:3.75rem;padding-right:.5rem}.timeline-item::before{left:1.875rem;border-color:transparent var(--retro-dark) transparent transparent;border-width:10px 10px 10px 0}.timeline-left::after,.timeline-right::after{left:10px}.timeline-left,.timeline-right{left:0}}
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- MAIN CONTAINER -->
+    <div class="container mx-auto max-w-3xl px-4 py-8 md:py-12">
+
+        <!-- HOOK HEADER -->
+        <header class="text-center mb-12 fade-in-section">
+            <h1 class="text-3xl md:text-4xl">
+                KONTEN FYP
+                <span class="block mt-2">(FOR YOUR PROFIT)</span>
+            </h1>
+        </header>
+
+        <!-- TITLE & POSTER SECTION -->
+        <section class="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-12 fade-in-section">
+            <div class="text-center md:text-left order-2 md:order-1">
+                <div class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold py-1 px-3 rounded-full mb-4">
+                    Seminar Offline di Senyawa Space
+                </div>
+                <h2 class="text-2xl md:text-3xl mb-3">The Starter Kit: From First Content to First Paycheck</h2>
+                <p class="text-lg">
+                    Workshop series buat kamu yang mau mulai ngonten tapi bingung, atau udah ngonten tapi burnout & hasilnya gitu-gitu aja.
+                </p>
+            </div>
+            <div class="w-full aspect-[4/5] bg-slate-200 rounded-xl flex items-center justify-center border border-slate-300 order-1 md:order-2">
+                <img src="poster-webinar.png" alt="Poster Seminar Konten FYP" class="w-full h-full object-cover rounded-xl" width="400" height="500" decoding="async" onerror="this.parentElement.innerHTML = `<span class='text-slate-500 font-medium text-center p-4'>Poster Seminar Kamu (4:5)</span>`">
+            </div>
+        </section>
+        
+        <!-- PEMBICARA & MATERI SECTION -->
+        <section class="mb-12 fade-in-section">
+            <h2 class="text-3xl text-center mb-8">Pembicara & Materi</h2>
+            
+            <!-- Day 1 -->
+            <div class="mb-10">
+                <h3 class="text-2xl text-center mb-6"><span class="badge">Hari 1: Short-Form Content (Tiktok/IG)</span></h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Speaker 1.1 -->
+                    <div class="card p-6 text-center">
+                        <img src="foto-speaker-1.jpg" alt="Foto Speaker 1" class="w-24 h-24 rounded-full mx-auto mb-4 border-2 border-current" width="100" height="100" loading="lazy" decoding="async" onerror="this.src='https://placehold.co/100x100/e2e8f0/334155?text=S1'">
+                        <h4 class="text-xl">Nama Pembicara 1</h4>
+                        <p class="font-medium mb-3">Afiliasi/Perusahaan</p>
+                        <p class="text-sm font-semibold mt-4 pt-4 border-t-2 border-slate-200">Topik: [Materi Pembicara 1]</p>
+                    </div>
+                    <!-- Speaker 1.2 -->
+                    <div class="card p-6 text-center">
+                        <img src="foto-speaker-2.jpg" alt="Foto Speaker 2" class="w-24 h-24 rounded-full mx-auto mb-4 border-2 border-current" width="100" height="100" loading="lazy" decoding="async" onerror="this.src='https://placehold.co/100x100/e2e8f0/334155?text=S2'">
+                        <h4 class="text-xl">Nama Pembicara 2</h4>
+                        <p class="font-medium mb-3">Afiliasi/Perusahaan</p>
+                        <p class="text-sm font-semibold mt-4 pt-4 border-t-2 border-slate-200">Topik: [Materi Pembicara 2]</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 2 -->
+            <div>
+                <h3 class="text-2xl text-center mb-6"><span class="badge">Hari 2: Long-Form Content (Youtube)</span></h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Speaker 2.1 -->
+                    <div class="card p-6 text-center">
+                        <img src="foto-speaker-3.jpg" alt="Foto Speaker 3" class="w-24 h-24 rounded-full mx-auto mb-4 border-2 border-current" width="100" height="100" loading="lazy" decoding="async" onerror="this.src='https://placehold.co/100x100/e2e8f0/334155?text=S3'">
+                        <h4 class="text-xl">Nama Pembicara 3</h4>
+                        <p class="font-medium mb-3">Afiliasi/Perusahaan</p>
+                        <p class="text-sm font-semibold mt-4 pt-4 border-t-2 border-slate-200">Topik: [Materi Pembicara 3]</p>
+                    </div>
+                    <!-- Speaker 2.2 -->
+                    <div class="card p-6 text-center">
+                        <img src="foto-speaker-4.jpg" alt="Foto Speaker 4" class="w-24 h-24 rounded-full mx-auto mb-4 border-2 border-current" width="100" height="100" loading="lazy" decoding="async" onerror="this.src='https://placehold.co/100x100/e2e8f0/334155?text=S4'">
+                        <h4 class="text-xl">Nama Pembicara 4</h4>
+                        <p class="font-medium mb-3">Afiliasi/Perusahaan</p>
+                        <p class="text-sm font-semibold mt-4 pt-4 border-t-2 border-slate-200">Topik: [Materi Pembicara 4]</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TARGET AUDIENCE SECTION -->
+        <section class="mb-12 fade-in-section">
+            <h2 class="text-3xl text-center mb-8">Siapa yang Wajib Ikut?</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-center">
+                <div class="card interactive-card p-4 flex flex-col items-center justify-center"><span class="text-3xl mb-2">🤔</span><p class="font-semibold">Baru Mau Mulai Ngonten</p></div>
+                <div class="card interactive-card p-4 flex flex-col items-center justify-center"><span class="text-3xl mb-2">😥</span><p class="font-semibold">Stuck & Burnout</p></div>
+                <div class="card interactive-card p-4 flex flex-col items-center justify-center"><span class="text-3xl mb-2">💸</span><p class="font-semibold">Belum Dapat Cuan</p></div>
+                <div class="card interactive-card p-4 flex flex-col items-center justify-center"><span class="text-3xl mb-2">📈</span><p class="font-semibold">Mau Naikin Level Konten</p></div>
+                <div class="card interactive-card p-4 flex flex-col items-center justify-center"><span class="text-3xl mb-2">🤝</span><p class="font-semibold">Cari Komunitas & Kolaborasi</p></div>
+                <div class="card interactive-card p-4 flex flex-col items-center justify-center"><span class="text-3xl mb-2">🚀</span><p class="font-semibold">Siapapun yang Serius</p></div>
+            </div>
+        </section>
+
+        <!-- RUNDOWN SECTION -->
+        <section class="mb-12 fade-in-section">
+            <h2 class="text-3xl text-center mb-8">Rundown Acara</h2>
+            <div class="timeline">
+                <div class="timeline-item timeline-left">
+                    <div class="card p-4">
+                        <h3 class="font-bold">Hari 1 - Sabtu</h3>
+                        <p class="text-sm">09:00 - Registrasi & Networking</p>
+                        <p class="text-sm">10:00 - Sesi 1: [Topik Speaker 1]</p>
+                        <p class="text-sm">11:30 - Coffee Break</p>
+                        <p class="text-sm">12:00 - Sesi 2: [Topik Speaker 2]</p>
+                        <p class="text-sm">13:30 - Lunch & Mingle</p>
+                    </div>
+                </div>
+                <div class="timeline-item timeline-right">
+                    <div class="card p-4">
+                        <h3 class="font-bold">Hari 2 - Minggu</h3>
+                        <p class="text-sm">09:30 - Kumpul & Ice Breaking</p>
+                        <p class="text-sm">10:00 - Sesi 3: [Topik Speaker 3]</p>
+                        <p class="text-sm">11:30 - Coffee Break</p>
+                        <p class="text-sm">12:00 - Sesi 4: [Topik Speaker 4]</p>
+                        <p class="text-sm">13:30 - Closing & Foto Bersama</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRICING & CTA SECTION -->
+        <div id="daftar" class="card interactive-card p-6 md:p-8 mb-12 fade-in-section">
+            <div class="flex flex-col md:flex-row md:items-center gap-6">
+                <!-- Value Stack -->
+                <div class="flex-1 value-stack">
+                    <h2 class="text-2xl mb-4 text-center md:text-left">Yang Kamu Dapatkan:</h2>
+                    <ul>
+                        <li><span>The Starter Kit: Day 1</span> <span>Rp 249.000</span></li>
+                        <li>
+                            <span>The Starter Kit: Day 2</span> 
+                            <div class="flex items-center gap-2">
+                                <span class="line-through">Rp 249.000</span>
+                                <span class="badge">GRATIS</span>
+                            </div>
+                        </li>
+                        <li class="total"><span>Total Value</span> <span>Rp 498.000</span></li>
+                    </ul>
+                     <div class="final-price-wrapper">
+                        <h3 class="font-semibold mb-1">CUKUP BAYAR</h3>
+                        <p class="text-4xl text-blue-600">Rp 249.000</p>
+                    </div>
+                </div>
+                
+                <div class="hidden md:block w-px h-24 bg-slate-200"></div>
+
+                <!-- CTA -->
+                <div class="flex-1 text-center">
+                    <a href="http://lynk.id/geldifydigital/qrkv8xz99gky/checkout" target="_blank" rel="noopener noreferrer" class="btn-primary w-full block mt-4">Amankan Tiketmu Sekarang!</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- LOCATION SECTION -->
+        <section class="mb-12 fade-in-section">
+            <h2 class="text-3xl text-center mb-8">Lokasi Acara</h2>
+            <div class="card">
+                <div class="grid md:grid-cols-2 gap-0 items-center">
+                    <div class="p-6">
+                        <h3 class="text-xl">Senyawa+ Space</h3>
+                        <p class="text-slate-600 mt-2">Jl. H. R. Rasuna Said No.Kav. C-22, RT.2/RW.5, Karet Kuningan, Kecamatan Setiabudi, Kota Jakarta Selatan.</p>
+                        <a href="https://maps.app.goo.gl/r6H9E2Jg1jJ1sQ4t7" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 font-semibold text-blue-600 hover:underline">Lihat di Google Maps →</a>
+                    </div>
+                    <div class="w-full h-full min-h-[300px]">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.5411713088024!2d106.8386035125452!3d-6.192091060643428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f43f5ed22fb9%3A0xed4ef3f92ddf6491!2sSenyawa%2B%20Space!5e0!3m2!1sid!2sid!4v1758805373402!5m2!1sid!2sid" width="100%" height="100%" style="border:0; border-radius: 0 0.5rem 0.5rem 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- FAQ SECTION -->
+        <section class="mb-12 card interactive-card p-6 md:p-8 fade-in-section">
+            <h2 class="text-3xl text-center mb-8">Tanya Jawab</h2>
+            <div class="space-y-2">
+                <details class="faq-item"><summary class="flex justify-between items-center font-semibold text-lg cursor-pointer py-2"><span>Apakah acara ini offline atau online?</span><svg class="w-5 h-5 transition-transform duration-300 chevron" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg></summary><p class="text-slate-600 pt-2 pb-2">Acara ini diadakan secara offline di Senyawa Space untuk pengalaman belajar yang lebih interaktif. Alamat detail akan dikirimkan ke email kamu setelah pendaftaran.</p></details>
+                <details class="faq-item"><summary class="flex justify-between items-center font-semibold text-lg cursor-pointer py-2"><span>Apakah ada grup diskusi setelah seminar?</span><svg class="w-5 h-5 transition-transform duration-300 chevron" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg></summary><p class="text-slate-600 pt-2 pb-2">Ya, kamu akan diundang ke grup Whatsapp eksklusif untuk networking dengan peserta lain dan diskusi lanjutan dengan pembicara.</p></details>
+                <details class="faq-item"><summary class="flex justify-between items-center font-semibold text-lg cursor-pointer py-2"><span>Saya pemula, apakah seminar ini cocok untuk saya?</span><svg class="w-5 h-5 transition-transform duration-300 chevron" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg></summary><p class="text-slate-600 pt-2 pb-2">Sangat cocok. Ini adalah "The Starter Kit", semua materi dirancang khusus untuk kreator pemula yang ingin serius.</p></details>
+            </div>
+        </section>
+
+        <!-- FINAL CTA SECTION -->
+        <section class="text-center card interactive-card p-8 fade-in-section">
+            <h2 class="text-2xl mb-3">Dari Konten Pertama ke Cuan Pertama.</h2>
+            <p class="text-slate-600 max-w-xl mx-auto mb-6">Ini bukan cuma workshop, ini adalah investasi buat karir konten kamu. Amankan tempatmu sebelum kehabisan.</p>
+            <a href="http://lynk.id/geldifydigital/qrkv8xz99gky/checkout" target="_blank" rel="noopener noreferrer" class="btn-primary inline-block">Ya, Saya Mau Starter Kit-nya!</a>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="text-center mt-12 py-6">
+            <p class="font-semibold">&copy; 2025 Geldify & Samma. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+    <script defer>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // --- Scroll Animation Logic ---
+            const sections = document.querySelectorAll('.fade-in-section');
+            const scrollObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            sections.forEach(section => {
+                scrollObserver.observe(section);
+            });
+        });
+    </script>
+
+</body>
+</html>
+
